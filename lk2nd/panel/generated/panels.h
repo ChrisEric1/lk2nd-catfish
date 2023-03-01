@@ -6,6 +6,7 @@
 #include "lk_panel_boe_otm8019a_5p0_fwvga_video.h"
 #include "lk_panel_booyi_otm1287_720p_video.h"
 #include "lk_panel_hx8394d_720p_video.h"
+#include "lk_panel_ili9881c_hd_video.h"
 #include "lk_panel_r61308_720p_video.h"
 #include "lk_panel_r69431_720p_video.h"
 #include "lk_panel_tianma_nt35521_5p5_720p_video.h"
