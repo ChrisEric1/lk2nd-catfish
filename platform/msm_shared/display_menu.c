@@ -41,9 +41,7 @@
 #include <sys/types.h>
 #include <../../../app/aboot/devinfo.h>
 #include <lk2nd.h>
-#if TARGET_MSM8916
 #include <psci.h>
-#endif
 
 static const char *unlock_menu_common_msg = "If you unlock the bootloader, "\
 				"you will be able to install "\
@@ -365,7 +363,6 @@ void display_bootverify_option_menu_renew(struct select_msg_info *msg_info)
 
 static void display_fastboot_menu_print_fw_info(char *msg, size_t msg_size)
 {
-#if TARGET_MSM8916
 	bool armv8 = is_scm_armv8_support();
 	scmcall_arg arg = {0};
 	uint32_t psci_version = PSCI_RET_NOT_SUPPORTED;
@@ -404,7 +401,6 @@ static void display_fastboot_menu_print_fw_info(char *msg, size_t msg_size)
 		display_fbcon_menu_message("PSCI - unavailable\n",
 					   FBCON_YELLOW_MSG, common_factor);
 	}
-#endif
 }
 
 /* msg_lock need to be holded when call this function. */

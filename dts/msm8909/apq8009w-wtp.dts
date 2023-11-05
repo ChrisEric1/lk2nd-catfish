@@ -5,20 +5,14 @@
 #include <skeleton.dtsi>
 
 / {
-	compatible = "qcom,apq8009-mtp", "qcom,apq8009", "qcom,mtp";
-
-	// This is used by the bootloader to find the correct DTB
 	qcom,msm-id = <265 0>, <301 0>;
 	qcom,board-id= <8 0x105>;
-
+	model = "Mobvoi TicWatch Pro";
+	compatible = "mobvoi,catfish", "qcom,msm8909", "lk2nd,device";
 	mobvoi-catfish {
-		model = "Mobvoi TicWatch Pro";
-		compatible = "mobvoi,catfish", "qcom,apq8009w", "lk2nd,device";
 		lk2nd,match-panel;
-
 		panel {
 			compatible = "mobvoi,catfish-panel";
-
 			qcom,mdss_dsi_rm67162_wqvga_cmd {
 				compatible = "mobvoi,rm67162";
 			};
