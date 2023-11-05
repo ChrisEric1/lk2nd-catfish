@@ -5,6 +5,7 @@
 #include <skeleton.dtsi>
 
 / {
+	model = "Acer Liquid Z330";
 	compatible = "qcom,msm8909-qrd", "qcom,msm8909", "qcom,qrd";
 
 	// This is used by the bootloader to find the correct DTB
@@ -12,7 +13,6 @@
 	qcom,board-id = <0x1000b 0x8>, <0x11000b 0x8>, <0x21000b 0x8>;
 
 	acer-t01 {
-		model = "Acer Liquid Z330";
 		compatible = "acer,t01", "qcom,msm8909", "lk2nd,device";
 
 		qcom,board-id = <0x1000b 0x8>, <0x1000b 0x1008>,

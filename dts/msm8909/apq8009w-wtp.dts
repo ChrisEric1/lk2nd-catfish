@@ -5,11 +5,11 @@
 #include <skeleton.dtsi>
 
 / {
+	model = "Mobvoi TicWatch Pro";
 	qcom,msm-id = <265 0>, <301 0>;
 	qcom,board-id= <8 0x105>;
-	model = "Mobvoi TicWatch Pro";
-	compatible = "mobvoi,catfish", "qcom,msm8909", "lk2nd,device";
 	mobvoi-catfish {
+		compatible = "mobvoi,catfish", "qcom,msm8909", "lk2nd,device";
 		lk2nd,match-panel;
 		panel {
 			compatible = "mobvoi,catfish-panel";
